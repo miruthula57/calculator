@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<style type="text/css">
+input[type="button"]{
+    display: block;
+    float: left;
+    width: 25%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+input{
+    font-size: 20px !important;
+}
+</style>
+    <title>calculator</title>
+  </head>
+  <body>
+   
+    <div class="container mt-5 ">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <form name="claculator">
+                    <input type="text" name="display" class="form-control bg-dark text-white">
+                    <input type="button"  value="1" onclick="click1()" class="btn btn-dark">
+                    <input type="button"  value="2" onclick="click2()" class="btn btn-dark">
+                    <input type="button"  value="3" onclick="click3()" class="btn btn-dark">
+                    <input type="button" value="4" onclick="click4()" class="btn btn-dark">
+                    <input type="button" value="5" onclick="click5()" class="btn btn-dark">
+                    <input type="button"  value="6" onclick="click6()" class="btn btn-dark">
+                    <input type="button"  value="7" onclick="click7()" class="btn btn-dark">
+                    <input type="button"  value="8" onclick="click8()" class="btn btn-dark">
+                    <input type="button"  value="9" onclick="click9()" class="btn btn-dark">
+                    <input type="button"  value="0" onclick="click0()" class="btn btn-dark">
+                    <input type="button"  value="+" onclick="clickadd()" class="btn btn-dark">
+                    <input type="button"  value="-" onclick="clicksub()" class="btn btn-dark">
+                    <input type="button"  value="*" onclick="clickmulti()" class="btn btn-dark">
+                    <input type="button"  value="/" onclick="clickdiv()" class="btn btn-dark">
+                    <input type="button"  value="clr" onclick="clickclr()" class="btn btn-dark">
+                    <input type="button"  value="=" onclick="clickequ()" class="btn btn-dark">
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        function click1(){
+            document.claculator.display.value+=1;
+        }
+        function click2(){
+            document.claculator.display.value+=2;
+        }
+        function click3(){
+            document.claculator.display.value+=3;
+        }
+        function click4(){
+            document.claculator.display.value+=4;
+        }
+        function click5(){
+            document.claculator.display.value+=5;
+        }
+        function click6(){
+            document.claculator.display.value+=6;
+        }
+        function click7(){
+            document.claculator.display.value+=7;
+        }
+        function click8(){
+            document.claculator.display.value+=8;
+        }
+        function click9(){
+            document.claculator.display.value+=9;
+        }
+        function click0(){
+            document.claculator.display.value+=0;
+        }
+        function clickadd(){
+            document.claculator.display.value+="+";
+        }
+        function clicksub(){
+            document.claculator.display.value+="-";
+        }
+        function clickmulti(){
+            document.claculator.display.value+="*";
+        }
+        function clickdiv(){
+            document.claculator.display.value+="/";
+        }
+        function clickclr(){
+            document.claculator.display.value="";
+        }
+        function clickequ(){
+           var Display = eval(document.claculator.display.value);
+           document.claculator.display.value=Display;
+        }
+    </script>
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
